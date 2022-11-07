@@ -1,211 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
 body {
-    font-family: poppins,sans-serif;
-}
-
-section {
-    background-color: white;    
-}
-
-.sub-section {
-    display: flex;
-    justify-content: space-around;
-    padding: 80px;
-}
-
-.sub-section-alt {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 80px;
-}
-
-.hero-area {
-    display:flex;
-    height: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.hero {
-    background-color: #1c1d25;
-    height: 100vh;
-    color: white;
-    font-size: 40px;
-}
-
-.hero-text {
-    margin-left: 40px;
-    margin-bottom: 200px;
-}
-
-footer {
-    padding: 80px;
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-ul {
-    display: flex;
-    list-style-type: none;
-    width: 500px;
-    justify-content: space-around;
-    font-size: 30px;
-}
-
-ul.show{
-    display: block;
-}
-
-li {
-    /* width: 200px; */
-    text-decoration: none;
+    transition: 0.3s;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241,239,239);
+    font-family: 'Poppins', sans-serif;
+    color:rgb(57, 57, 57);
 }
 
 h1 {
-    font-size: 90px;
-    margin: 0;
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 300;
+    margin: 10px 0px;
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    margin: 10px 0px;
 }
+
+/* .square h2 {
+    margin: 50px 0px 10px 0px;
+} */
 
 p {
-    margin: 0;
-    font-size: 30px;
-    font-weight: 300;
-}
-
-.subtext {
-    font-size: 15px;
-    font-weight: 300;
-}
-
-
-
-.button {
-    width: 200px;
-    height: 50px;
-    border-radius: 25px;
-    text-align: center;
-    background-color: coral;
-    font-size: 30px;
-    font-weight: 300;
-    padding-top: 5px;
-    margin-top: 20px;
-}
-
-.button:hover {
-    background-color: #ef744b;
-}
-
-.button:active {
-    background-color:A9A9A9;
-    color: #808088;
-}
-
-.socials {
-    padding-bottom: 200px;
-}
-
-.logo {
-    height: 80px;
-    margin:30px;
-}
-
-.social {
-    margin: 20px;
-}
-
-
-.headshot {
-    width: 300px;
-    border-radius: 150px;
-}
-
-.headshot-container {
-    display: flex;
-    align-items: center;
-}
-
-.project-card {
-    width: 300px;
-    height: 500px;
-    box-shadow: 5px 5px 20px rgb(189, 186, 186);
-    margin: 10px;
-}
-
-.project-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-@media only screen and (max-width: 1000px) {
-    .project-container {
-        display: flex;
-        flex: wrap;
-    }
-}
-
-
-.project-images {
-    margin-top: 25px;
-    width: 250px;
-    border-radius: 125px;
-}
-
-hr {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.project-card-links {
-    text-decoration: none;
-    color: #ef744b;
+    margin: 0px;
+    font-size: 20px;
 }
 
 a {
+    color: rgb(162, 0, 255);
+    font-size: 20px;
     text-decoration: none;
-    color: #ffffff;
+    font-weight: 100;
 }
 
-.hamburger {
-    display: none;
+.dark a {
+    color: rgb(246, 169, 241);
 }
 
-.hamburger:focus {
-    outline: 0;
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
 }
 
-@media only screen and (max-width: 1000px) {
-    .hamburger {
-        display: block;
-        border: 0;
-        background-color: transparent;
-        color: #ffffff;
-        font-size: 30px;
-        margin: 20px;
-        align-self: flex-end;
+
+.switch {
+    width: 80px;
+    height: 40px;
+    background-color: rgb(39,38,38);
+    border-radius: 20px;
+    position: relative;
+}
+
+.flicker {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(255,255,255);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    box-shadow: 
+      inset 4px 4px 4px rgb(255,255,255),
+      inset -4px -4px 4px rgb(195 193 198 / 90%);
+    transition: 0.3s;
+}
+
+.dark{
+    background-color:  rgb(57, 57, 57);
+    transition: 0.3s;
+}
+
+.moon {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 rgb(255,255,255);
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+
+.dark .flicker {
+    transform: translateX(40px);
+}
+
+.dark > * {
+    color: rgb(255,255,255);
+}
+
+.main {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.main-text {
+    padding: 30px;
+}
+
+.square {
+    width: 98%;
+    margin: 1%;
+    height: 350px;
+    background-color: rgb(255,255,255);
+    text-align: center;
+}
+
+.dark .square {
+    background-color: rgb(71, 71, 71)
+}
+
+#deskbooking {
+    background-image: url("../images/deskBookingAppMainScreen.png");
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sub-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.hero-image {
+    position: relative;
+    width: 50%;
+    height: 350px;
+    display: block;
+    margin-bottom:100px;
+}
+
+.cube {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    transform: rotate(-25deg) skew(25deg);
+}
+
+
+/* cube section of webpage start */
+
+.cube::before {
+    position: absolute;
+    content:"";
+    width: 21px;
+    height: 100%;
+    /* background-color: blue; */
+    transform: skewY(-45deg);
+    left: -20px;
+    bottom: -10px;
+}
+
+.cube:after {
+    position: absolute;
+    content:"";
+    width: 100%;
+    height: 21px;
+    /* background-color: red; */
+    transform: skewX(-45deg);
+    left: -10px;
+    bottom: -20px;
+}
+
+#html {
+    left: 100px;
+    bottom: 80px;
+    background-image: url("../images/html-square.png");
+    background-size: cover;
+    background-color: rgb(175, 119, 227);
+    box-shadow: -60px 60px 20px rgb(50 50 50/ 15%)
+}
+
+#html:before {
+    background-color: rgb(189, 154, 221);
+}
+
+#html:after {
+    background-color: rgb(205, 188, 221);
+}
+
+#css {
+    left: 250px;
+    bottom: 140x;
+    background-image: url("../images/html-square.png");
+    background-size: cover;
+    background-color: rgb(175, 119, 227);
+    box-shadow: -60px 60px 20px rgb(50 50 50/ 15%)
+}
+
+#css:before {
+    background-color: rgb(189, 154, 221);
+}
+
+#css:after {
+    background-color: rgb(205, 188, 221);
+}
+
+#javascript {
+    left: 450px;
+    bottom: 200px;
+    background-image: url("../images/html-square.png");
+    background-size: cover;
+    background-color: rgb(175, 119, 227);
+    box-shadow: -40px 40px 20px rgb(50 50 50/ 15%)
+}
+
+#javascript:before {
+    background-color: rgb(189, 154, 221);
+}
+
+#javascript:after {
+    background-color: rgb(205, 188, 221);
+}
+
+#react {
+    left: 350px;
+    bottom: 4px;
+    background-image: url("../images/html-square.png");
+    background-size: cover;
+    background-color: rgb(175, 119, 227);
+    box-shadow: -40px 40px 20px rgb(50 50 50/ 15%)
+}
+
+#react:before {
+    background-color: rgb(189, 154, 221);
+}
+
+#react:after {
+    background-color: rgb(205, 188, 221);
+}
+
+ /* cube section of webpage end */
+
+footer {
+    display:flex;
+    justify-content: center;
+    padding: 100px 30px;
+    background-color: rgb(136,136,136);
+}
+
+.dark footer {
+    background-color: rgb(28,28,28);
+}
+
+
+@media only screen and (min-width: 970px) { 
+    .main-text{
+        width: 50%;
     }
-    ul {
+    .square{
+    width: 48%;
+    margin: 1%;
+    height: 600px;
+ }
+}
+
+@media only screen and (max-width: 1300px) { 
+    .hero-image {
         display: none;
-        background-color: #2b2c38;
-        margin: 0px;
     }
 
-    nav {
-        display: flex;
-        flex-direction: column-reverse;
-        background-color: #2b2c38;
+    #deskbooking {
+        background-image: url("../images/deskBookingAppMainScreen.png");
+        background-size: 250px 150px;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
-    .logo {
-        display: none;
-    }
 }
+
