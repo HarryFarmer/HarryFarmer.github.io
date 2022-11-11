@@ -67,8 +67,8 @@ header {
     top: 5px;
     left: 5px;
     box-shadow: 
-      inset 4px 4px 4px rgb(255,255,255),
-      inset -4px -4px 4px rgb(195 193 198 / 90%);
+        inset 4px 4px 4px rgb(255,255,255),
+        inset -4px -4px 4px rgb(195 193 198 / 90%);
     transition: 0.3s;
 }
 
@@ -122,6 +122,13 @@ header {
 
 #deskbooking {
     background-image: url("../images/deskBookingAppMainScreen.png");
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#investment_cal {
+    background-image: url("../images/Screenshot\ 2022-11-09\ 200945.png");
     background-size: 500px 300px;
     background-repeat: no-repeat;
     background-position: center;
@@ -192,52 +199,52 @@ header {
 #css {
     left: 250px;
     bottom: 140x;
-    background-image: url("../images/html-square.png");
+    background-image: url("../images/logo_CSS3.png");
     background-size: cover;
-    background-color: rgb(175, 119, 227);
+    background-color: #Add8e6;
     box-shadow: -60px 60px 20px rgb(50 50 50/ 15%)
 }
 
 #css:before {
-    background-color: rgb(189, 154, 221);
+    background-color: rgb(154, 181, 221);
 }
 
 #css:after {
-    background-color: rgb(205, 188, 221);
+    background-color: rgb(156, 181, 218);
 }
 
 #javascript {
     left: 450px;
     bottom: 200px;
-    background-image: url("../images/html-square.png");
+    background-image: url("../images/js\ logo\ small.png");
     background-size: cover;
-    background-color: rgb(175, 119, 227);
+    background-color: rgb(219, 225, 123);
     box-shadow: -40px 40px 20px rgb(50 50 50/ 15%)
 }
 
 #javascript:before {
-    background-color: rgb(189, 154, 221);
+    background-color: rgb(208, 209, 140);
 }
 
 #javascript:after {
-    background-color: rgb(205, 188, 221);
+    background-color: rgb(208, 209, 140);
 }
 
 #react {
     left: 350px;
     bottom: 4px;
-    background-image: url("../images/html-square.png");
+    background-image: url("../images/Python_logo_icon.png");
     background-size: cover;
-    background-color: rgb(175, 119, 227);
+    background-color: #bcfd49;
     box-shadow: -40px 40px 20px rgb(50 50 50/ 15%)
 }
 
 #react:before {
-    background-color: rgb(189, 154, 221);
+    background-color: #c7d9a9;
 }
 
 #react:after {
-    background-color: rgb(205, 188, 221);
+    background-color: #c7d9a9;
 }
 
  /* cube section of webpage end */
