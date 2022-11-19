@@ -150,7 +150,7 @@ nav {
 
     /* git hub */
 #github-socials{
-    background-image: url("../images/GitHub-Mark/GitHub-Mark/PNG/GitHub-Mark-64px.png");
+    background-image: url("../images/GitHub-Mark-64px.png");
     background-size: 50px 50px;
     background-repeat: no-repeat;
     background-position: center;
@@ -158,7 +158,7 @@ nav {
 }
 
 .dark #github-socials{
-    background-image: url("../images/GitHub-Mark/GitHub-Mark/PNG/GitHub-Mark-Light-64px.png");
+    background-image: url("../images/GitHub-Mark-Light-64px.png");
     background-size: 50px 50px;
     background-repeat: no-repeat;
     background-position: center;
