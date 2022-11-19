@@ -33,21 +33,46 @@ p {
 }
 
 a {
-    color: rgb(162, 0, 255);
-    font-size: 20px;
+    font-size: 30px;
     text-decoration: none;
-    font-weight: 100;
+    font-weight: 400;
+    color:rgb(57, 57, 57);
 }
 
+
+ul {
+display: block;
+justify-content: center;
+
+}
+
+
+
+
+li {
+    list-style-type: none;
+    display: inline;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+
 .dark a {
-    color: rgb(246, 169, 241);
+    color: white;
 }
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content:space-between ;
     padding: 30px;
 }
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
 
 
 .switch {
@@ -108,6 +133,97 @@ header {
     padding: 30px;
 }
 
+/* Socials section dark and normal mode */
+
+.socials{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.socials-div{
+    display: flex;
+    justify-content: space-between;
+    width: 275px;
+    }
+
+    /* git hub */
+#github-socials{
+    background-image: url("../images/GitHub-Mark/GitHub-Mark/PNG/GitHub-Mark-64px.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px;
+}
+
+.dark #github-socials{
+    background-image: url("../images/GitHub-Mark/GitHub-Mark/PNG/GitHub-Mark-Light-64px.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px;
+}
+
+/* Linkedin */
+
+#linkedin-socials{
+    background-image: url("../images/linkedin-black.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px;
+}
+
+.dark #linkedin-socials{
+    background-image: url("../images/linkedingrey.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px;
+}
+
+/* email */
+
+#email-socials{
+    background-image: url("../images/email-black.png");
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px;
+}
+
+.dark #email-socials{
+    background-image: url("../images/email-white.png");
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px;
+}
+
+/* dev.to */
+
+#devto-socials{
+    background-image: url("../images/devto-black.png");
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px;
+}
+
+.dark #devto-socials{
+    background-image: url("../images/devto-white.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px;
+}
+
+
+
+
+
+/* end of social section */
 .square {
     width: 98%;
     margin: 1%;
@@ -121,7 +237,7 @@ header {
 }
 
 #deskbooking {
-    background-image: url("../images/deskBookingAppMainScreen.png");
+    background-image: url("../images/desk_booking_gif.gif");
     background-size: 500px 300px;
     background-repeat: no-repeat;
     background-position: center;
